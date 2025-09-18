@@ -21,7 +21,7 @@ public class Empresa {
         System.out.println("==TRABAJADORES==");
         for(int i = 0; i < n; i++){
             System.out.println((i+1)+". Para el trabajador "+ emp[i].getNombre()+":");
-            System.out.println("\tEl sueldo es "+emp[i].pagoPorCargo());
+            System.out.println("\tEl sueldo es de "+emp[i].pagoPorCargo());
         }
     }
 }
