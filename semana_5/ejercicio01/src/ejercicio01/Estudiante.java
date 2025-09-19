@@ -54,20 +54,24 @@ public class Estudiante extends Persona {
     // Ingresando los datos
     @Override
     public void ingresarDatos(){
-        // Al llamar al ingresarDatos() se piden los datos desde la clase persona
+        // Al llamar al super.ingresarDatos() se piden los datos desde la clase persona
         super.ingresarDatos();
         System.out.print("Ingresar el codigo del estudiante: ");
         setCodigo(sc.next());
+        sc.nextLine();
         System.out.print("Ingresar la carrera del estudiante: ");
         setCarrera(sc.nextLine());
-        System.out.println("Ingrese el promedio del estudiante: ");
+        System.out.print("Ingrese el promedio del estudiante: ");
         setPromedio(sc.nextDouble());
     }
     
     // Aqui mostraria a solo los estudiantes usado como estudiantes[i].mostrarInfo, ese estudiantes seria un arreglo de estudiantes
-    public void mostrarInfo(){
-        // Usar los protected
-        // pass
+    @Override
+    public void mostrarDatos(){
+        super.mostrarDatos();
+        System.out.println("Codigo: " + getCodigo());
+        System.out.println("Carrera: " + getCarrera());
+        System.out.println("Promedio: " + getPromedio());
     }
 
     @Override

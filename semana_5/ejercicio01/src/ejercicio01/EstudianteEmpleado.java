@@ -38,16 +38,19 @@ public class EstudianteEmpleado extends Estudiante {
     @Override
     public void ingresarDatos(){
         super.ingresarDatos();
-        System.out.print("Ingrese su:");
+        System.out.print("Ingrese el codigo del empleado:");
         setCodigoEmpleado(sc.next());
+        sc.nextLine();
         System.out.println("Ingrese su turno: ");
         setTurno(sc.next());
+        sc.nextLine();
     }
     
     @Override
-    public void mostrarInfo(){
-        super.mostrarInfo();
-        
+    public void mostrarDatos(){
+        super.mostrarDatos();
+        System.out.println("Codigo de empleado: " + getCodigoEmpleado());
+        System.out.println("Turno: " + getTurno());
     }
 
     @Override

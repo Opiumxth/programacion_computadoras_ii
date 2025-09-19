@@ -48,10 +48,27 @@ public class Empleado extends Persona {
         this.exp = exp;
     }
     
+    // Ingresando los datos usando el super
+    @Override
+    public void ingresarDatos(){
+        super.ingresarDatos();
+        System.out.print("Ingresar el puesto del empleado: ");
+        setPuesto(sc.next());
+        System.out.print("Ingresar el sueldo del empleado: ");
+        setSueldo(sc.nextInt());
+        sc.nextLine();
+        System.out.print("Ingrese los años de experiencia del empleado: ");
+        setExp(sc.nextInt());
+        sc.nextLine();
+    }
+    
     // Aqui mostraria a solo los empleados usado como empleado[i].mostrarInfo, ese empleado seria un arreglo de empleados
-    public void mostrarInfo(){
-        // Usar los protected
-        // pass
+    @Override
+    public void mostrarDatos(){
+        super.mostrarDatos();
+        System.out.println("Puesto: " + getPuesto());
+        System.out.println("Sueldo: " + getSueldo());
+        System.out.println("Años de experiencia: " + getExp());
     }
     
     public void aumentarSueldo(int cantidad){

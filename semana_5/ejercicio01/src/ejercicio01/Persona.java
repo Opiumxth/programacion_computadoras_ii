@@ -70,7 +70,6 @@ public class Persona {
     }
 
     // Ingresando los datos
-    // Persona 1
     public void ingresarDatos(){
         System.out.print("Ingrese el nombre: ");
         setNombre(sc.nextLine());
@@ -78,13 +77,20 @@ public class Persona {
         setSexo(sc.next());
         System.out.print("Ingrese la edad: ");
         setEdad(sc.nextInt());
-        System.out.println("Ingrese la ");
+        sc.nextLine();
+        System.out.print("Ingrese la direccion: ");
+        setDireccion(sc.nextLine());
+        System.out.println("");
+        setFechaNacimiento(sc.nextLine());
     }
-    
-    
+
     // nombre, sexo, edad, direccion, fecha de nacimineto 
     // Aqui se muestran los datos de todas la personas
     public void mostrarDatos(){
-        System.out.printf("%10 %5 %5 %6 %7 %8");
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Sexo: " + getSexo());
+        System.out.println("Edad: " + getEdad());
+        System.out.println("Dirección: " + getDireccion());
+        System.out.println("Fecha de nacimiento: " + getFechaNacimiento());
     }
 }
