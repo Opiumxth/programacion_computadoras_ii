@@ -37,6 +37,7 @@ public class Alumno extends Persona {
         setCredito(sc.nextInt());
     }
     
+    // Mostrando los datos
     @Override
     public void mostrarDatos(){
         super.mostrarDatos();
@@ -46,7 +47,7 @@ public class Alumno extends Persona {
     // registrarAsistencia
     @Override
     public void registrarAsistencia(){
-        // pass
+        System.out.println("El alumno asistio");
     }
 
     @Override
