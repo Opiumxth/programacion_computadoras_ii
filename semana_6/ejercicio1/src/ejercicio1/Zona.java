@@ -1,0 +1,67 @@
+package ejercicio1;
+
+public class Zona {
+    private String nombre;
+    private int precio;
+    private int capacidad;
+    private Entrada[] entradas;
+
+    public Zona(String nombre, int precio, int capacidad, Entrada[] entradas) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.capacidad = capacidad;
+        this.entradas = entradas;
+    }
+
+    public Entrada[] getEntradas() {
+        return entradas;
+    }
+
+    public void setEntradas(Entrada[] entradas) {
+        this.entradas = entradas;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+    
+    // Falta implementar
+    private boolean generarEntrada(){
+        // Pass
+        return true;
+    }
+    
+    public Entrada[] mostrarEntradas(){
+        
+        return entradas;
+    }
+    
+    public Entrada[] venderEntradas(int numero){
+        return entradas;
+    }
+    
+    @Override
+    public String toString() {
+        return "Zona{" + "nombre=" + nombre + ", precio=" + precio + ", capacidad=" + capacidad + ", entradas=" + entradas + '}';
+    }
+}

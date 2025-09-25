@@ -1,0 +1,13 @@
+@startuml
+testdot
+
+
+class demouml.DemoUML{
+    int edad
+    String nombre
+
+    saludar()
+    comer()
+
+}
+@enduml
