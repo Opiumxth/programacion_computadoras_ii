@@ -38,21 +38,40 @@ public class Concierto {
     }
 
     public boolean agregarZona(String nombre){
-        // Pass
-        boolean something = true;
-        return something;
+        Zona nueva = new Zona(nombre, 100,10,new Entrada[10]);
+        for(int i = 0; i < nueva.getCapacidad(); i++){
+            nueva.getEntradas()[i] = new Entrada(i+1, "LIBRE", null);
+        }
+        
+        Zona[] nuevoArray = new Zona[zonas.length + 1];
+        for(int i = 0; i < zonas.length; i++){
+            nuevoArray[i] = zonas[i];
+        }
+        nuevoArray[zonas.length] = nueva;
+        this.zonas = nuevoArray;
+        return true;
     }
     
     public boolean eliminarZona(String nombre){
-        // Pass
-        boolean something = true;
-        return something;
+        int count = 0;
+        for(Zona z: zonas){
+            if(!z.getNombre().equalsIgnoreCase(nombre)) count ++;
+        }
+        if(count == zonas.length) return false;
+        Zona[] nuevoArray = new Zona[count];
+        int idx = 0;
+        for(Zona z: zonas){
+            if(!z.getNombre().equalsIgnoreCase(nombre)){
+                nuevoArray[idx++] = z;
+            }
+        }
+        this.zonas = nuevoArray;
+        return true;
     }
     
     @Override
     public String toString() {
         return "Concierto{" + "nombre=" + nombre + ", fecha=" + fecha + ", zonas=" + zonas + '}';
     }
-    
     
 }

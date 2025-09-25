@@ -45,7 +45,11 @@ public class Venta {
 
     public void setEntradas(Entrada[] entradas) {
         this.entradas = entradas;
-    }    
+    }
+
+    public boolean anular(){
+        return true;
+    }
     
     @Override
     public String toString() {

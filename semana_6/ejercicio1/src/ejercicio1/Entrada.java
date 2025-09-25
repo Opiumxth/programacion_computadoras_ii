@@ -35,15 +35,23 @@ public class Entrada {
         this.estado = estado;
     }
     
-    // Falta implementar
     public boolean vender(){
-        return true;
+        if(this.estado.equals("LIBRE")){
+            this.estado = "VENDIDA";
+            return true;
+        }
+        return false;
     }
     
     public boolean liberar(){
-        return true;
+        if(this.estado.equals("VENDIDA")){
+            this.estado = "LIBRE";
+            this.venta = null;
+            return true;
+        }
+        return false;
     }
-    
+        
     @Override
     public String toString() {
         return "Entrada{" + "numero=" + numero + ", estado=" + estado + ", venta=" + venta + '}';

@@ -45,7 +45,6 @@ public class Zona {
         this.capacidad = capacidad;
     }
     
-    // Falta implementar
     private boolean generarEntrada(){
         // Pass
         return true;
@@ -57,7 +56,18 @@ public class Zona {
     }
     
     public Entrada[] venderEntradas(int numero){
-        return entradas;
+        int count = 0;
+        Entrada[] vendidas = new Entrada[numero];
+        for(Entrada e: entradas){
+            if(count < numero && e.getEstado().equals("LIBRE")){
+                e.vender();
+                vendidas[count++] = e;
+            }
+        }
+        if(count < numero){
+            System.out.println("No hay suficeintes entradas libres en "+nombre);
+        }
+        return vendidas;
     }
     
     @Override
