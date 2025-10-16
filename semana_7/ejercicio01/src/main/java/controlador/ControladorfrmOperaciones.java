@@ -1,9 +1,12 @@
 package controlador;
 
+import datos.Repositorio;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import modelo.OperacionMatematica;
+import modelo.Usuario;
 import vista.frmOperaciones;
+import vista.frmIngreso;
 
 public class ControladorfrmOperaciones {
     private OperacionMatematica modelo;
@@ -39,6 +42,16 @@ public class ControladorfrmOperaciones {
                 modelo.setOperador2(Integer.parseInt(vista.txtNumero2.getText()));
                 modelo.dividir();
                 vista.lblResultado.setText(String.valueOf(modelo.getCalculo()));
+            }
+        });
+
+        this.vista.btnSalir.addActionListener(new ActionListener (){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                vista.dispose();
+                frmIngreso vista = new frmIngreso();
+                ControladorfrmUsuario controlador = new ControladorfrmUsuario(vista, Repositorio.usuario);
+                controlador.iniciar();
             }
         });
     }
