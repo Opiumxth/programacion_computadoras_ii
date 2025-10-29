@@ -1,0 +1,18 @@
+@startuml
+title FSM - Jugador
+
+[*] --> Inactivo
+
+Inactivo --> Moviendose : Presionar tecla [A,W,S,D]
+Inactivo --> Atacando : Presionar tecla [PD]
+Inactivo --> Muerto : Salud <= 0
+
+Moviendose --> Inactivo : No hacer nada
+Moviendose --> Atacando : Presionar tecla [PD]
+Moviendose --> Muerto : Salud <= 0
+
+Atacando --> Inactivo : Dejar de presionar
+Atacando --> Muerto : Salud <= 0
+
+@enduml
+

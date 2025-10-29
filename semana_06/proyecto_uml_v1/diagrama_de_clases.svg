@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="170px" preserveAspectRatio="none" style="width:327px;height:170px;background:#FFFFFF;" version="1.1" viewBox="0 0 327 170" width="327px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <!--class Juego-->
+        <g class="entity" data-entity="Juego" data-source-line="2" data-uid="ent0002" id="entity_Juego">
+            <rect fill="#F1F1F1" height="48" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69.4499" x="7" y="7"/>
+            <ellipse cx="22" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+            <path d="M24.9688,28.6406 Q24.3906,28.9375 23.75,29.0781 Q23.1094,29.2344 22.4063,29.2344 Q19.9063,29.2344 18.5781,27.5938 Q17.2656,25.9375 17.2656,22.8125 Q17.2656,19.6875 18.5781,18.0313 Q19.9063,16.375 22.4063,16.375 Q23.1094,16.375 23.75,16.5313 Q24.4063,16.6875 24.9688,16.9844 L24.9688,19.7031 Q24.3438,19.125 23.75,18.8594 Q23.1563,18.5781 22.5313,18.5781 Q21.1875,18.5781 20.5,19.6563 Q19.8125,20.7188 19.8125,22.8125 Q19.8125,24.9063 20.5,25.9844 Q21.1875,27.0469 22.5313,27.0469 Q23.1563,27.0469 23.75,26.7813 Q24.3438,26.5 24.9688,25.9219 L24.9688,28.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37.4499" x="36" y="28.432">Juego</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="75.4499" y1="39" y2="39"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="75.4499" y1="47" y2="47"/>
+        </g>
+        <!--class Jugador-->
+        <g class="entity" data-entity="Jugador" data-source-line="8" data-uid="ent0003" id="entity_Jugador">
+            <rect fill="#F1F1F1" height="48" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83.7998" x="111.5" y="7"/>
+            <ellipse cx="126.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+            <path d="M129.4688,28.6406 Q128.8906,28.9375 128.25,29.0781 Q127.6094,29.2344 126.9063,29.2344 Q124.4063,29.2344 123.0781,27.5938 Q121.7656,25.9375 121.7656,22.8125 Q121.7656,19.6875 123.0781,18.0313 Q124.4063,16.375 126.9063,16.375 Q127.6094,16.375 128.25,16.5313 Q128.9063,16.6875 129.4688,16.9844 L129.4688,19.7031 Q128.8438,19.125 128.25,18.8594 Q127.6563,18.5781 127.0313,18.5781 Q125.6875,18.5781 125,19.6563 Q124.3125,20.7188 124.3125,22.8125 Q124.3125,24.9063 125,25.9844 Q125.6875,27.0469 127.0313,27.0469 Q127.6563,27.0469 128.25,26.7813 Q128.8438,26.5 129.4688,25.9219 L129.4688,28.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51.7998" x="140.5" y="28.432">Jugador</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="112.5" x2="194.2998" y1="39" y2="39"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="112.5" x2="194.2998" y1="47" y2="47"/>
+        </g>
+        <!--class Enemigo-->
+        <g class="entity" data-entity="Enemigo" data-source-line="14" data-uid="ent0004" id="entity_Enemigo">
+            <rect fill="#F1F1F1" height="48" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="90.1138" x="230.5" y="7"/>
+            <ellipse cx="245.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+            <path d="M248.4688,28.6406 Q247.8906,28.9375 247.25,29.0781 Q246.6094,29.2344 245.9063,29.2344 Q243.4063,29.2344 242.0781,27.5938 Q240.7656,25.9375 240.7656,22.8125 Q240.7656,19.6875 242.0781,18.0313 Q243.4063,16.375 245.9063,16.375 Q246.6094,16.375 247.25,16.5313 Q247.9063,16.6875 248.4688,16.9844 L248.4688,19.7031 Q247.8438,19.125 247.25,18.8594 Q246.6563,18.5781 246.0313,18.5781 Q244.6875,18.5781 244,19.6563 Q243.3125,20.7188 243.3125,22.8125 Q243.3125,24.9063 244,25.9844 Q244.6875,27.0469 246.0313,27.0469 Q246.6563,27.0469 247.25,26.7813 Q247.8438,26.5 248.4688,25.9219 L248.4688,28.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58.1138" x="259.5" y="28.432">Enemigo</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="231.5" x2="319.6138" y1="39" y2="39"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="231.5" x2="319.6138" y1="47" y2="47"/>
+        </g>
+        <!--class Mapa-->
+        <g class="entity" data-entity="Mapa" data-source-line="21" data-uid="ent0005" id="entity_Mapa">
+            <rect fill="#F1F1F1" height="48" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69.0159" x="7" y="115"/>
+            <ellipse cx="22" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+            <path d="M24.9688,136.6406 Q24.3906,136.9375 23.75,137.0781 Q23.1094,137.2344 22.4063,137.2344 Q19.9063,137.2344 18.5781,135.5938 Q17.2656,133.9375 17.2656,130.8125 Q17.2656,127.6875 18.5781,126.0313 Q19.9063,124.375 22.4063,124.375 Q23.1094,124.375 23.75,124.5313 Q24.4063,124.6875 24.9688,124.9844 L24.9688,127.7031 Q24.3438,127.125 23.75,126.8594 Q23.1563,126.5781 22.5313,126.5781 Q21.1875,126.5781 20.5,127.6563 Q19.8125,128.7188 19.8125,130.8125 Q19.8125,132.9063 20.5,133.9844 Q21.1875,135.0469 22.5313,135.0469 Q23.1563,135.0469 23.75,134.7813 Q24.3438,134.5 24.9688,133.9219 L24.9688,136.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37.0159" x="36" y="136.432">Mapa</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="75.0159" y1="147" y2="147"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="75.0159" y1="155" y2="155"/>
+        </g>
+        <!--class Posicion-->
+        <g class="entity" data-entity="Posicion" data-source-line="27" data-uid="ent0006" id="entity_Posicion">
+            <rect fill="#F1F1F1" height="48" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="86.7118" x="111" y="115"/>
+            <ellipse cx="126" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1;"/>
+            <path d="M128.9688,136.6406 Q128.3906,136.9375 127.75,137.0781 Q127.1094,137.2344 126.4063,137.2344 Q123.9063,137.2344 122.5781,135.5938 Q121.2656,133.9375 121.2656,130.8125 Q121.2656,127.6875 122.5781,126.0313 Q123.9063,124.375 126.4063,124.375 Q127.1094,124.375 127.75,124.5313 Q128.4063,124.6875 128.9688,124.9844 L128.9688,127.7031 Q128.3438,127.125 127.75,126.8594 Q127.1563,126.5781 126.5313,126.5781 Q125.1875,126.5781 124.5,127.6563 Q123.8125,128.7188 123.8125,130.8125 Q123.8125,132.9063 124.5,133.9844 Q125.1875,135.0469 126.5313,135.0469 Q127.1563,135.0469 127.75,134.7813 Q128.3438,134.5 128.9688,133.9219 L128.9688,136.6406 Z " fill="#000000"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54.7118" x="140" y="136.432">Posicion</text>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="112" x2="196.7118" y1="147" y2="147"/>
+            <line style="stroke:#181818;stroke-width:0.5;" x1="112" x2="196.7118" y1="155" y2="155"/>
+        </g>
+        <!--SRC=[Iyv9B2vMy2fDJS-lvWA2MYwkPAXGUc9AVX6ge6jUQcucL2L2r3Un815LNK1-SMPoPduUL1G0]-->
+    </g>
+</svg>
