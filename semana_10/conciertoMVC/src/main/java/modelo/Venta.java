@@ -1,7 +1,9 @@
 package modelo;
 
+import java.util.Date;
+
 public class Venta {
-    String fecha;
+    Date fecha;
     int monto;
     Entrada[] entrada;
     Persona cliente;

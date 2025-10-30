@@ -1,14 +1,14 @@
 package modelo;
 
 public class Persona {
+    String DNI;
     Tarjeta tarjeta;
     String nombres;
     String apellidos;
-    String DNI;
     String password;
     Venta venta;
     
-    public boolean registrar(){
+    public boolean registrarTarjeta(){
         return true;
     }
     
